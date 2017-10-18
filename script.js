@@ -74,7 +74,8 @@ function cvLang(lang)
 		document.getElementById("english-button").style.backgroundColor = "white";
 		document.getElementById("english-button").style.boxShadow = "0px 0px 15px 2px rgba(0,0,0,0.56)";
 		document.getElementById("english-button").style.cursor = "pointer"
-		
+		document.getElementById("download-text").innerHTML = "Wersja PDF "
+		document.getElementById("href-link").href = "Radosław Borowicz CV.pdf"
 			
 	}
 	if (lang == "Eng")
@@ -124,6 +125,8 @@ function cvLang(lang)
 		document.getElementById("english-button").style.backgroundColor = "#f2f4f7";
 		document.getElementById("english-button").style.boxShadow = "none";
 		document.getElementById("english-button").style.cursor = "initial"
+		document.getElementById("download-text").innerHTML = "PDF Version "
+		document.getElementById("href-link").href = "Radosław-Borowicz-CV.pdf"
 		
 	}
 	function fill(id, inner)
