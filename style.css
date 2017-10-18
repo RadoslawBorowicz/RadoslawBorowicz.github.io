@@ -153,6 +153,7 @@ button {
 	width:49.5%;
 	padding:0px;
 	transition:0.5s;
+	z-index:99;
 
 }
 .button-right
