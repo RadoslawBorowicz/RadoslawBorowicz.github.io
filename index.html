@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Arimo" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="script.js"></script>
+		<title>Radosław Borowicz</title>
+		<meta type="Author" content="Radek Borowicz">
+	</head>
+	<body onload="cvLang('Pol'); fadeIn();">
+		<button  id="english-button" onclick="setTimeout(cvLang,300,'Eng'); fadeOut(); setTimeout(fadeIn,300);"><p>English</p></button>
+		<button  class="button-right" id="polish-button" onclick="setTimeout(cvLang,300,'Pol'); fadeOut();setTimeout(fadeIn,300);"><p>Polski</p></button>
+		<div class="column left">
+			<div class="box"><p id="name">Radosław Borowicz</p></div>
+			<div class="box right">
+				<p id="birth"></p>
+				<p>14.08.1994</p>	
+			</div>
+			<div class="box right" id="add">
+				<p id="address"></p>
+				<p>Nowolipki 29A/12 <br> 01-010 Warszawa</p>
+				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.1010673869246!2d20.981015315797116!3d52.24154787976245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc80176e218f%3A0xb1465c1c10e140b2!2sNowolipki+29A%2C+Warszawa!5e0!3m2!1spl!2spl!4v1505409606454" width="250" height="200" frameborder="0" style="border:0" transition="0.5s" allowfullscreen></iframe>
+			</div>
+			<div class="box right">
+				<p id="phone"></p>
+				<p> 514-206-708</p>
+			</div>
+			<div class="box right">
+				<p>E-mail</p>
+				<p><a href="mailto:radekborowicz@outlook.com">radekborowicz@outlook.com</a></p>
+			</div>
+			<a href="Radosław Borowicz CV.pdf" download><div class="box right small" id="CV-download"><p style="text-align:center">Wersja PDF<i class="fa fa-download" aria-hidden="true"></i></p></div></a>
+		</div>
+		<div class="column-right">
+			<div class="box"><p id="courses"></p>
+			<ul>
+				<li id="course_0"></li>
+				<li id="course_1"></li>
+				<li id="course_2"></li>
+			</ul>
+			</div>
+			<div class="box"><p id="education"></p>
+			<ul>
+				<li id="educ_0"></li>
+				
+			</ul>
+			</div>
+			<div class="box" id="experience-box"><p id="experience"></p>
+			<ul>
+				<li id="exp_0"></li>
+					<ul class="expand">
+						<li id="exp_alstor_0"></li>
+						<li id="exp_alstor_1"></li>
+						<li id="exp_alstor_2"></li>
+					
+					</ul>
+				
+				<li id="exp_1"></li>
+					<ul class="expand">
+						<li id="exp_tesro_0"></li>
+						<li id="exp_tesro_1"></li>
+						<li id="exp_tesro_2"></li>
+						<li id="exp_tesro_3"></li>
+						<li id="exp_tesro_4"></li>
+						<li id="exp_tesro_5"></li>
+					</ul>
+				
+			</ul>
+			<a href="javascript:void(0)" onclick="showMore()"><div class="bar-button"><i class="fa fa-angle-down" style="font-size:40px" id="arrow"></i></div></a>
+			</div>
+			<div class="box"><p id="lang"></p>
+			<ul>
+			<li id="language_0"></li>
+			<li id="language_1"></li>
+			</ul>
+			</div>
+			<div class="box"><p id="intrests"></p>
+				<li id="intrests_0"></li>
+				<li id="intrests_1"></li>
+				<li id="intrests_2"></li>
+			</div>
+		</div>
+
+	</body>
+	
+</html>
+

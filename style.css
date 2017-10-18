@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+a
+{
+	text-decoration:none;
+	color:black;
+	display:block;
+}
+
+.bar-button:hover
+{
+	background-color:rgba(204, 230, 255, 0.90);
+	transition:0.5s;
+}
+
+html,body
+{
+	padding:0px;
+	margin:0px;
+	background-color:#f2f4f7;
+	height:100%;
+	min-width:500px;
+	border:none;
+	
+}
+p
+{
+	font-family: 'Arimo', sans-serif;
+	font-size:16px;
+	padding:5px;
+}
+li
+{
+	font-family: 'Arimo', sans-serif;
+	list-style:none;
+	display:block;
+	background-color:rgba(204, 230, 255, 0.20);
+	margin:5px 0 0 0;
+	padding:5px;
+}
+ul
+{
+	margin:0px;
+	padding:0px;
+}
+
+.column
+{
+
+width:29.5%;
+float:left;
+padding:0px 0px 20px 0px;
+transition:0.5s;
+}
+.column-right
+{
+
+width:69.5%;
+float:left;
+padding:0px 0px 20px 0px;
+margin-left:1%;
+transition:0.5s;
+}
+.box
+{
+	
+	width:95%;
+	height:100px;
+	margin-bottom:10px;
+	padding:0;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.56);
+	opacity:0;
+	color:black;
+	transition:0.5s;
+	background-color:white;
+	
+}
+.right
+{
+	
+	text-align:right;
+	float:right;
+}
+
+p{ margin:0; padding-bottom:10px;}
+
+p:first-of-type
+{
+	color:#2980b9;
+	font-size:22px;
+	font-family: 'Raleway', sans-serif;
+
+}
+#name{
+	padding-top:30px;
+	text-align:center;
+	font-size:30px;
+}
+
+.column-right .box
+{
+	height:150px;
+}
+
+.bar-button
+{
+	background-color:blue;
+	margin-top:10px;
+	height:33px;
+	text-align:center;
+	background-color:rgba(204, 230, 255, 0.70);
+}
+.expand
+{
+	height:0px;
+	overflow-y: hidden;
+	transition:0.5s;
+	margin-left:40px;
+}
+
+#CV-download:hover
+{
+	background-color:lightblue;
+}
+#add
+{
+	height:300px;
+}
+
+#arrow
+{
+	transition:0.5s;
+}
+
+.small
+{
+	padding-top:7px;
+	height:50px;
+}
+
+
+button {
+	position:sticky;
+	top:0;
+	margin:0px;
+	border:none;
+	text-decoration:none;
+	margin-bottom:20px;
+	height:50px;
+	display:block;
+	float:left;
+	width:49.5%;
+	padding:0px;
+	transition:0.5s;
+
+}
+.button-right
+{
+	margin-left:1%;
+}
+
+button:hover
+{
+	cursor:pointer;
+}
+
+@media screen and (max-width: 1028px){
+	.column, .column-right{
+		width:100%;
+		transition:0.5s;
+		margin:0px;
+	}
+	.box 
+	{
+		margin:5px 0px 0px 0px;
+		width:100%;
+	}
+}
+
+
+
+@media screen and (max-width: 1028px){
+	#map{
+		display:none;
+	}
+	#add
+	{
+		height:100px;
+	}
+}
+	
+@media screen and (min-width: 1400px){
+	#map{
+		width:350px;
+		transition:0.5s;
+	}
+
+}
+
+@media screen and (max-width: 1400px){
+	#map{
+		width:250px;
+		transition:0.5s;
+	}
+
+}
