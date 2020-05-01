@@ -5,11 +5,22 @@ var polish = {
 		{
 			 course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Prawo jazdy kategorii B"],
 			 education: ["09/2010 - 05/2014 Zespół Szkół Licealnych i Technicznych nr1"],
-			 expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - obecnie: Testronic Sp. z o.o."],
-				expierienceTestronic:["Praca na platformie Jira","Praca na platformie Testrail","Praca na platformie Crittercism","Praca na platformie Fabric.io","Praca z pomocą platformy Confluence","Funkcjonalne testowanie gier mobilnych"],
-				expierienceAlstor:["Pomoc w utrzymaniu sprzętu komputerowego","Naprawa sprzętu komputerowego","Przygotowywanie sprzętu i sieci LAN na turniej gry Call of Duty"],
+			 expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - 10/2017: Testronic Sp. z o.o.","12/2017 – 12/2019: Ericsson Sp. z o.o."],
+				expierienceTestronic:["Praca na platformie Jira","Praca na platformie Testrail","Praca na platformie Crittercism","Praca na platformie Fabric.io","Praca z pomocą platformy Confluence","Funkcjonalne testowanie gier i aplikacji mobilnych"],
+				expierienceAlstor:["Pomoc w utrzymaniu sprzętu komputerowego","Naprawa sprzętu komputerowego","Przygotowywanie sprzętu komputerowego i sieci LAN"],
+				expierienceEricsson:[
+					"Testy oprogramowania dla kontrolerów sieci komórkowej",
+					"Wewnętrzne narzędzia do kontroli środowiska oraz testów na bazie JAVA",
+					"Continuous integration",
+					"Jira",
+					"Confluence",
+					"Praca w systemie Agile",
+					"Git",
+					"Linux",
+					"Jenkins"
+					],
 			 language: ["Polski - ojczysty","Angielski - zaawansowany (B2-C1)"],
-			 intrests: ["Tworzenie niepotrzebnych stron WWW.","Wszystko czym zajmuje się Elon Musk.","Wywracanie się na deskorolce."],
+			 intrests: ["Formuła 1","Motoryzacja","Kolarstwo"],
 		},
 };
 var english = {
@@ -18,10 +29,21 @@ var english = {
 			course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Driving License"],
 			education: ["09/2010 - 05/2014 Zespół Szkół Licealnych i Technicznych nr1"],
 			expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - at present: Testronic Sp. z o.o."],
-				expierienceTestronic:["Working with JIRA ","Working with Testrail","Working with Crittercism","Working with Fabric.io","Working with help of Confluence","Black box testing of mobile games"],
-				expierienceAlstor:["Helping with daily maintenance of electronic equipment", "Repairs of PCs and other office equipment", "Setting-up of equipment and LAN network for Call Of Duty Tournament"],
+				expierienceTestronic:["Working with JIRA ","Working with Testrail","Working with Crittercism","Working with Fabric.io","Working with help of Confluence","Black box testing of mobile games and applications"],
+				expierienceAlstor:["Helping with daily maintenance of electronic equipment", "Repairs of PCs and other office equipment", "Setting-up of PC equipment and LAN network"],
+				expierienceEricsson:[
+					"Testing of software for radio network controllers",
+					"Internal tools for controlling tests and test environment based on JAVA",
+					"Continuous integration",
+					"Jira",
+					"Confluence",
+					"Working in Agile environment",
+					"Git",
+					"Linux",
+					"Jenkins"
+					],
 			language: ["Polish - native","English - advanced (B2-C1)"],
-			intrests: ["Making websites without particular purpose.","Everything Elon Musk does.","Falling off skateboard."],
+			intrests: ["Formula 1","Motorsports","Cycling"],
 		},
 };
 function cvLang(lang)
@@ -57,6 +79,10 @@ function cvLang(lang)
 		for (i=0; i<polish.courses.expierienceTestronic.length; i++)
 		{
 			fill("exp_tesro_"+i, polish.courses.expierienceTestronic[i]);
+		};
+		for (i=0; i<polish.courses.expierienceEricsson.length; i++)
+		{
+			fill("exp_eric_"+i, polish.courses.expierienceEricsson[i]);
 		};
 		for (i=0; i<polish.courses.expierienceAlstor.length; i++)
 		{
@@ -164,13 +190,14 @@ function showMore()
 {
 	if (toggle == 0)
 	{
-		var x = document.getElementsByClassName("expand");
-		for(i=0; i<x.length; i++)
-			{
-				x[i].style.height = "200px";
-			}
+		var eric = document.getElementById("eric");
+		var tesro = document.getElementById("tesro");
+		var alstor = document.getElementById("alstor");
+		eric.style.height="300px";
+		tesro.style.height="200px";
+		alstor.style.height="150px";
 		var y = document.getElementById("experience-box");
-		y.style.height="550px";
+		y.style.height="835px";
 		document.getElementById("arrow").style.transform = "rotate(180deg)";
 		toggle++;
 	} 
@@ -183,7 +210,7 @@ function showMore()
 		}
 	
 		var y = document.getElementById("experience-box");
-		y.style.height="150px";
+		y.style.height="183px";
 		document.getElementById("arrow").style.transform = "rotate(0deg)";
 		toggle=0;
 	}

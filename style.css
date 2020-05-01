@@ -73,10 +73,14 @@ transition:0.5s;
 	opacity:0;
 	color:black;
 	transition:0.5s;
-	background-color:white;
-	
-	
+	background-color:white;	
 }
+
+#experience-box
+{
+height: 183px;
+}
+
 .right
 {
 	
