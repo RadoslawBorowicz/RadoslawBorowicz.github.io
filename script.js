@@ -135,6 +135,10 @@ function cvLang(lang)
 		{
 			fill("exp_tesro_"+i, english.courses.expierienceTestronic[i]);
 		};
+		for (i=0; i<english.courses.expierienceEricsson.length; i++)
+		{
+			fill("exp_eric_"+i, english.courses.expierienceEricsson[i]);
+		};
 		for (i=0; i<english.courses.expierienceAlstor.length; i++)
 		{
 			fill("exp_alstor_"+i, english.courses.expierienceAlstor[i]);
