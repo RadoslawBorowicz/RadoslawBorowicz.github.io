@@ -5,12 +5,12 @@ var polish = {
 		{
 			 course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Prawo jazdy kategorii B"],
 			 education: ["09/2010 - 05/2014 Zespół Szkół Licealnych i Technicznych nr1"],
-			 expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - 10/2017: Testronic Sp. z o.o.","12/2017 – 12/2019: Ericsson Sp. z o.o."],
+			 expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - 10/2017: Testronic Sp. z o.o.","12/2017 - 12/2019: Ericsson Sp. z o.o."],
 				expierienceTestronic:["Praca na platformie Jira","Praca na platformie Testrail","Praca na platformie Crittercism","Praca na platformie Fabric.io","Praca z pomocą platformy Confluence","Funkcjonalne testowanie gier i aplikacji mobilnych"],
 				expierienceAlstor:["Pomoc w utrzymaniu sprzętu komputerowego","Naprawa sprzętu komputerowego","Przygotowywanie sprzętu komputerowego i sieci LAN"],
 				expierienceEricsson:[
 					"Testy oprogramowania dla kontrolerów sieci komórkowej",
-					"Wewnętrzne narzędzia do kontroli środowiska oraz testów na bazie JAVA",
+					"Wewnętrzne narzędzia do kontroli środowiska oraz testów na bazie Javy",
 					"Continuous integration",
 					"Jira",
 					"Confluence",
@@ -28,12 +28,12 @@ var english = {
 		{ 
 			course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Driving License"],
 			education: ["09/2010 - 05/2014 Zespół Szkół Licealnych i Technicznych nr1"],
-			expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - at present: Testronic Sp. z o.o."],
+			expierience: ["05/2014 - 06/2014: ALSTOR T.Szukała i Wspólnicy Sp.j", "09/2015 - 10/2017: Testronic Sp. z o.o.","12/2017 - 12/2019: Ericsson Sp. z o.o."],
 				expierienceTestronic:["Working with JIRA ","Working with Testrail","Working with Crittercism","Working with Fabric.io","Working with help of Confluence","Black box testing of mobile games and applications"],
 				expierienceAlstor:["Helping with daily maintenance of electronic equipment", "Repairs of PCs and other office equipment", "Setting-up of PC equipment and LAN network"],
 				expierienceEricsson:[
 					"Testing of software for radio network controllers",
-					"Internal tools for controlling tests and test environment based on JAVA",
+					"Internal tools for controlling tests and test environment based on Java",
 					"Continuous integration",
 					"Jira",
 					"Confluence",
