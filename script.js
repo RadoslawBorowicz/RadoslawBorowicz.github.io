@@ -250,9 +250,9 @@ function showMore()
 
 	let slantedBox = document.getElementsByClassName("slanted");
 	
-	/*for (let y = 0; y<= slantedBox.length; y++){
+	for (let y = 0; y<= slantedBox.length; y++){
 			slantedBox[y].style.marginLeft = "0px";
-	}*/
+	}
 	
 	
 };
