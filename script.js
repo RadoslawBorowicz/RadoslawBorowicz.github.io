@@ -1,6 +1,6 @@
-﻿var toggle = 0;
+﻿let toggle = 0;
 
-var polish = {
+const polish = {
 	courses:
 		{
 			 course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Prawo jazdy kategorii B"],
@@ -23,7 +23,7 @@ var polish = {
 			 intrests: ["Formuła 1","Motoryzacja","Kolarstwo"],
 		},
 };
-var english = {
+const english = {
 	courses: 
 		{ 
 			course: ["Cisco Routing and Switching", "Cisco IT Essentials", "Driving License"],
@@ -179,8 +179,8 @@ function cvLang(lang)
 
 function fadeIn()
 { 
-	var x = document.getElementsByClassName("box");
-	var i;
+	let x = document.getElementsByClassName("box");
+	let i;
 	for (i = 0; i< x.length; i++)
 		{
 			x[i].style.opacity ="1";
@@ -191,8 +191,8 @@ function fadeIn()
 
 function fadeOut()
 { 
-	var x = document.getElementsByClassName("box");
-	var i;
+	let x = document.getElementsByClassName("box");
+	let i;
 	for (i = 0; i< x.length; i++)
 		{
 			x[i].style.opacity ="0";
@@ -205,13 +205,13 @@ function showMore()
 {
 	if (toggle == 0)
 	{
-		var eric = document.getElementById("eric");
-		var tesro = document.getElementById("tesro");
-		var alstor = document.getElementById("alstor");
+		let eric = document.getElementById("eric");
+		let tesro = document.getElementById("tesro");
+		let alstor = document.getElementById("alstor");
 		eric.style.height="300px";
 		tesro.style.height="200px";
 		alstor.style.height="150px";
-		var y = document.getElementById("experience-box");
+		let y = document.getElementById("experience-box");
 		y.style.height="835px";
 		document.getElementById("arrow").style.transform = "rotate(180deg)";
 		toggle++;
@@ -232,7 +232,7 @@ function showMore()
 
 };
 
-function loadSkills(){
+ function loadSkills(){
 	function countSkills(skillType, skillTypeID){
 		let skillElement = document.getElementById(`${skillTypeID}`);
 	for (i=0; i<skillType; i++)
@@ -243,10 +243,17 @@ function loadSkills(){
 	{
 	skillElement.innerHTML += "<span class='dot gray'></span>";	
 	}
-
-	};
+};
 	countSkills(html,"html");
 	countSkills(css,"css");
 	countSkills(javascript,"javascript");
+
+	let slantedBox = document.getElementsByClassName("slanted");
+	
+	/*for (let y = 0; y<= slantedBox.length; y++){
+			slantedBox[y].style.marginLeft = "0px";
+	}*/
+	
+	
 };
 
