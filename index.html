@@ -8,7 +8,7 @@
 		<title>Radosław Borowicz</title>
 		<meta type="Author" content="Radek Borowicz">
 	</head>
-	<body onload="cvLang('Pol'); fadeIn();">
+	<body onload="cvLang('Pol'); fadeIn(); loadSkills();">
 		<button  id="english-button" onclick="setTimeout(cvLang,300,'Eng'); fadeOut(); setTimeout(fadeIn,300);"><p>English</p></button>
 		<button  class="button-right" id="polish-button" onclick="setTimeout(cvLang,300,'Pol'); fadeOut();setTimeout(fadeIn,300);"><p>Polski</p></button>
 		<div class="column left">
@@ -30,7 +30,21 @@
 				<p>E-mail</p>
 				<p><a href="mailto:borowiczradoslaw@gmail.com">borowiczradoslaw@gmail.com</a></p>
 			</div>
-			<a id="href-link" href="Radosław Borowicz CV.pdf" download><div class="box right small" id="CV-download"><p style="text-align:center" ><span id="download-text"></span><i class="fa fa-download" aria-hidden="true"></i></p></div></a>
+			<div class="box right transparent" id="skills">
+				<ul>
+					<span class="shadow-wrap"><li class="slanted" id="html">HTML</li></span>
+					<span class="shadow-wrap"><li class="slanted" id="css">CSS</li></span>
+					<span class="shadow-wrap"><li class="slanted" id="javascript">Javascript</li></span>
+				</ul>
+			</div>
+			<a id="href-link" href="Radosław Borowicz CV.pdf" download>
+				<div class="box right small" id="CV-download">
+					<p style="text-align:center" >
+						<span id="download-text"></span>
+						<i class="fa fa-download" aria-hidden="true"></i>
+					</p>
+				</div>
+			</a>
 		</div>
 		<div class="column-right">
 			<div class="box"><p id="courses"></p>
@@ -94,7 +108,7 @@
 				<li id="intrests_2"></li>
 			</div>
 		</div>
-
+		
 	</body>
 	
 </html>

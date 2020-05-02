@@ -46,6 +46,17 @@ var english = {
 			intrests: ["Formula 1","Motorsports","Cycling"],
 		},
 };
+
+	html = 3;
+	css = 3;
+	javascript = 2;
+	git = 3;
+	java = 2;
+
+
+
+const maxSkills = 5;
+
 function cvLang(lang)
 { 
 	
@@ -218,6 +229,24 @@ function showMore()
 		document.getElementById("arrow").style.transform = "rotate(0deg)";
 		toggle=0;
 	}
-		
+
+};
+
+function loadSkills(){
+	function countSkills(skillType, skillTypeID){
+		let skillElement = document.getElementById(`${skillTypeID}`);
+	for (i=0; i<skillType; i++)
+	{
+	skillElement.innerHTML += "<span class='dot'></span>";
+	};
+	for (i=0; i<(maxSkills-skillType);i++)
+	{
+	skillElement.innerHTML += "<span class='dot gray'></span>";	
+	}
+
+	};
+	countSkills(html,"html");
+	countSkills(css,"css");
+	countSkills(javascript,"javascript");
 };
 
